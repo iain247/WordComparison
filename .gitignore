@@ -1,0 +1,12 @@
+/Test.class
+/Word2Vec.class
+/TextPreProcessing.class
+/TextPreProcessor.class
+/SparseVector.class
+/SparseVector$VectorElement.class
+/FileTokenizer.class
+/SparseVector$SVComparator.class
+/FileHandler.class
+/ByteData.class
+/FindWordPairSim.class
+/TextTokenizer.class
