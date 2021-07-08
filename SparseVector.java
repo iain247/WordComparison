@@ -21,7 +21,7 @@ public class SparseVector implements Serializable {
 	
 	public List<Integer> getFrequencies() {
 		/*
-		 * returns the frequencies of each c
+		 * returns the frequencies of each context word
 		 */
 		return new ArrayList<Integer>(contextWords.values());
 	}

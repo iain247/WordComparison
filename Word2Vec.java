@@ -113,14 +113,7 @@ public class Word2Vec {
 		x.saveVectors();
 
 		SparseVector y = x.getSparseVector("venice");
-		y.printValues();
-		
-//		int count = 0;
-//		for (String name : x.getAllWords()) {
-//			if (name.equals("portia")) count++;
-//		}
-//		System.out.println(count);
+		y.printValues(5);
 
 	}
-	
 }

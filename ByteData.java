@@ -21,7 +21,5 @@ public class ByteData implements Serializable {
 	public int getSize() {
 		return size;
 	}
-	
-	
 
 }

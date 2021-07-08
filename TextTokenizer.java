@@ -17,8 +17,7 @@ public class TextTokenizer {
 		vocabulary = new HashSet<String>();
 		allWords = new ArrayList<String>();
 		readStopWords();
-		readData();
-		
+		readData();		
 	}
 	
 	public HashSet<String> getVocabulary() {
@@ -63,6 +62,9 @@ public class TextTokenizer {
 	}
 	
 	private void readStopWords() {
+		/*
+		 * Reads in the stop words from the stop.txt file as an array list
+		 */
 		
 		stopWords = new ArrayList<String>();
 		
@@ -74,18 +76,6 @@ public class TextTokenizer {
 				stopWords.add(s.next());
 			}
 		} catch (IOException e) {e.printStackTrace();}
-	}
-	
-	public static void main(String[] args) {
-		TextTokenizer tt = new TextTokenizer("shakespeare.txt");
-		
-		for (String word : tt.getVocabulary()) {
-			if (word.contains("portia"))
-			System.out.println(word);
-		}
-		
-		System.out.println(tt.getAllWords().size());
-		System.out.println(tt.getVocabulary().size());
 	}
 
 }
